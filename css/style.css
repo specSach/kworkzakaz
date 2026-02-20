@@ -1,0 +1,191 @@
+.hero {
+  position: relative;
+  padding-top: 161px;
+  padding-bottom: 38px;
+  overflow: hidden;
+}
+
+<<<<<<< HEAD
+/* Видео на заднем фоне */
+=======
+>>>>>>> 6abb0fe (Fix bg)
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+<<<<<<< HEAD
+  filter: blur(3px); /* Размытие самого видео */
+  transform: scale(1.05); /* Увеличиваем, чтобы убрать края после размытия */
+}
+
+/* Градиентный оверлей поверх видео */
+=======
+  transform: scale(1.05);
+}
+
+>>>>>>> 6abb0fe (Fix bg)
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 18, 104, 0.5) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+<<<<<<< HEAD
+/* Размытие под фото фильмов */
+=======
+>>>>>>> 6abb0fe (Fix bg)
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(to top, #001268 0%, #00000000 100%);
+<<<<<<< HEAD
+  backdrop-filter: blur(10px); /* Размытие фона */
+=======
+  backdrop-filter: blur(0px);
+>>>>>>> 6abb0fe (Fix bg)
+  z-index: 2;
+  pointer-events: none;
+}
+
+<<<<<<< HEAD
+/* Контент поверх всего */
+=======
+>>>>>>> 6abb0fe (Fix bg)
+.hero__container {
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+.hero__text {
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 103px;
+  font-weight: 700;
+  color: #f3005d;
+  margin-bottom: 25px;
+}
+
+.hero__text-color {
+  color: #59ecd7;
+}
+
+.hero__sub-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 29px;
+  text-transform: uppercase;
+  color: #59ecd7;
+  margin-bottom: 70px;
+}
+
+.hero__descr {
+  width: 387px;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 auto 95px;
+  text-align: center;
+}
+
+.hero__movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  position: relative;
+<<<<<<< HEAD
+  z-index: 4; /* Поверх размытия */
+=======
+  z-index: 4;
+>>>>>>> 6abb0fe (Fix bg)
+}
+
+.hero__movie-img {
+  border-radius: 20px;
+  display: block;
+  width: clamp(120px, 20vw, 283px);
+  height: auto;
+  object-fit: cover;
+}
+
+/* ------------------ */
+
+.about {
+  width: 100%;
+  background: linear-gradient(to top, #0056ff 0%, #001268 100%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
+@media (max-width: 440px) {
+  .hero__text {
+    font-size: 62px;
+  }
+
+  .hero__sub-text {
+    font-size: 12px;
+    letter-spacing: 18px;
+    margin-bottom: 35px;
+  }
+
+  .hero__descr {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 402px) {
+  .hero__text {
+    font-size: 52px;
+  }
+
+  .hero__sub-text {
+    font-size: 12px;
+    letter-spacing: 12px;
+    margin-bottom: 35px;
+  }
+
+  .hero__descr {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+}
